@@ -1,3 +1,8 @@
+var gameState = {
+	pokemon: ''
+}
+
+
 var pokemonsEl = document
 	.querySelector('.select-screen')
 	.querySelectorAll('.character');
@@ -6,10 +11,48 @@ var i = 0;
 while (i < pokemonsEl.length) {
 	pokemonsEl[i].onclick = function() {
 		var pokemonName = this.dataset.pokemon;
-		console.log('I pressed this pokemon ' + pokemonName);
+		gameState.pokemon = pokemonName
 	};
 	i++;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // pokemon
 // // create data for 3 different pokemons, with their names, type, weaknesses, health, and attack moves(name, attack stat, maximum)
 // var pokemons = [
